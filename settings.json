@@ -1,0 +1,48 @@
+{
+  "name": "CodeFormer",
+  "description": "CodeFormer is a high-quality face restoration plugin",
+  "category": "Face Restoration",
+  "icon": "assets/icon.svg",
+  "type": "after",
+  "fields": [
+    {
+      "label": "Weight",
+      "name": "weight",
+      "type": "range",
+      "width": "60%",
+      "defaultValue": 0,
+      "rangeOptions": {
+        "min": 0,
+        "max": 1,
+        "step": 0.1
+      }
+    },
+    {
+      "label": "Upscale",
+      "name": "upscale",
+      "type": "select",
+      "width": "40%",
+      "defaultValue": "1",
+      "selectOptions": {
+        "items": [
+          {
+            "value": "1",
+            "label": "None"
+          },
+          {
+            "value": "2",
+            "label": "2x"
+          },
+          {
+            "value": "4",
+            "label": "4x"
+          },
+          {
+            "value": "8",
+            "label": "8x"
+          }
+        ]
+      }
+    }
+  ]
+}
